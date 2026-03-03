@@ -9,14 +9,14 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#fafafa;color:#333;scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:#f8f8f8;color:#333;scroll-behavior:smooth}
 
-/* NAVIGATION */
+/* NAV */
 nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:18px 60px;
+padding:20px 60px;
 background:#111;
 color:white;
 position:sticky;
@@ -33,7 +33,7 @@ nav a:hover{color:#FF6B00}
 
 /* HERO */
 .hero{
-height:80vh;
+height:85vh;
 background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
 url('https://images.unsplash.com/photo-1604908177522-432c26f0d48e');
 background-size:cover;
@@ -42,8 +42,8 @@ display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-color:white;
 text-align:center;
+color:white;
 padding:20px;
 }
 .hero h1{font-size:3rem;margin-bottom:15px}
@@ -51,7 +51,7 @@ padding:20px;
 .btn{
 background:#8B0000;
 color:white;
-padding:12px 28px;
+padding:12px 30px;
 border-radius:30px;
 text-decoration:none;
 font-weight:600;
@@ -61,23 +61,23 @@ transition:0.3s;
 
 /* SECTION */
 .section{padding:80px 60px}
-.section h2{margin-bottom:30px;font-size:2rem;color:#8B0000}
+.section h2{margin-bottom:30px;font-size:2rem;color:#8B0000;text-align:center}
 
-/* MENU GRID */
+/* MENU */
+.menu-category{margin-top:50px}
 .menu-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 .menu-card{
 background:white;
-padding:20px;
+padding:18px;
 border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
 transition:0.3s;
 }
-.menu-card:hover{transform:translateY(-8px)}
-.menu-card h3{margin-bottom:10px}
+.menu-card:hover{transform:translateY(-5px)}
 .price{color:#8B0000;font-weight:600}
 
 /* GALLERY */
@@ -95,18 +95,18 @@ border-radius:10px;
 
 /* REVIEWS */
 .review{
-background:#fff;
+background:white;
 padding:20px;
 border-radius:10px;
-box-shadow:0 8px 20px rgba(0,0,0,0.05);
-margin-bottom:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+margin-bottom:20px;
 }
 
 /* CONTACT */
-.contact-box{
+.contact{
 background:#111;
 color:white;
-padding:60px;
+padding:70px 60px;
 text-align:center;
 }
 
@@ -117,6 +117,20 @@ color:white;
 padding:20px;
 text-align:center;
 }
+
+/* FLOAT BUTTONS */
+.call-btn, .whatsapp-btn{
+position:fixed;
+right:20px;
+padding:15px;
+border-radius:50%;
+color:white;
+font-size:18px;
+text-align:center;
+z-index:999;
+}
+.call-btn{bottom:90px;background:#8B0000;}
+.whatsapp-btn{bottom:20px;background:#25D366;}
 
 @media(max-width:768px){
 nav{flex-direction:column}
@@ -144,49 +158,49 @@ nav{flex-direction:column}
 <a href="tel:08594239907" class="btn">Call & Reserve Now</a>
 </div>
 
-<!-- MENU SECTION -->
+<!-- MENU -->
 <div id="menu" class="section">
-<h2>Popular Menu Items</h2>
+<h2>Our Menu</h2>
 
+<div class="menu-category">
+<h3>Biryani Items</h3>
 <div class="menu-grid">
-
-<div class="menu-card">
-<h3>Chicken Biryani</h3>
-<p>Single & Full Available</p>
-<p class="price">₹120</p>
+<div class="menu-card"><h4>Chicken Biryani</h4><p class="price">₹120</p></div>
+<div class="menu-card"><h4>Mutton Biryani</h4><p class="price">₹170</p></div>
+<div class="menu-card"><h4>Egg Biryani</h4><p class="price">₹80</p></div>
+<div class="menu-card"><h4>Chicken Dum Biryani</h4><p class="price">₹300</p></div>
+<div class="menu-card"><h4>Family Pack</h4><p class="price">₹790</p></div>
+</div>
 </div>
 
-<div class="menu-card">
-<h3>Mutton Biryani</h3>
-<p>Single & Full Available</p>
-<p class="price">₹170</p>
+<div class="menu-category">
+<h3>Non Veg Curries</h3>
+<div class="menu-grid">
+<div class="menu-card"><h4>Chicken Curry</h4><p class="price">₹100</p></div>
+<div class="menu-card"><h4>Mutton Curry</h4><p class="price">₹150</p></div>
+<div class="menu-card"><h4>Prawns Curry</h4><p class="price">₹300</p></div>
+<div class="menu-card"><h4>Fish Curry</h4><p class="price">₹280</p></div>
+</div>
 </div>
 
-<div class="menu-card">
-<h3>Chicken Fry</h3>
-<p>Single & Full Available</p>
-<p class="price">₹100</p>
+<div class="menu-category">
+<h3>Roti & Tandoor</h3>
+<div class="menu-grid">
+<div class="menu-card"><h4>Butter Naan</h4><p class="price">₹35</p></div>
+<div class="menu-card"><h4>Tandoori Roti</h4><p class="price">₹20</p></div>
+<div class="menu-card"><h4>Plain Kulcha</h4><p class="price">₹25</p></div>
+</div>
 </div>
 
-<div class="menu-card">
-<h3>Butter Naan</h3>
-<p>Soft & Fresh Tandoor</p>
-<p class="price">₹35</p>
+<div class="menu-category">
+<h3>Drinks & Desserts</h3>
+<div class="menu-grid">
+<div class="menu-card"><h4>Butter Milk</h4><p class="price">₹20</p></div>
+<div class="menu-card"><h4>Cool Drink</h4><p class="price">₹25</p></div>
+<div class="menu-card"><h4>Vanilla Ice Cream</h4><p class="price">₹50</p></div>
+</div>
 </div>
 
-<div class="menu-card">
-<h3>Egg Fried Rice</h3>
-<p>Single & Full Available</p>
-<p class="price">₹60</p>
-</div>
-
-<div class="menu-card">
-<h3>Prawns Curry</h3>
-<p>Spicy Andhra Style</p>
-<p class="price">₹300</p>
-</div>
-
-</div>
 </div>
 
 <!-- GALLERY -->
@@ -210,7 +224,7 @@ nav{flex-direction:column}
 </div>
 
 <div class="review">
-<p>"Awesome restaurant, must visit place, if you are veggies dont miss veg Biryani."</p>
+<p>"Awesome restaurant, must visit place."</p>
 <strong>- Pratap N</strong>
 </div>
 
@@ -222,17 +236,29 @@ nav{flex-direction:column}
 </div>
 
 <!-- CONTACT -->
-<div id="contact" class="contact-box">
+<div id="contact" class="contact">
 <h2>Visit Us Today</h2>
 <p>Second Floor, JKC Complex, Andhra Ratna Rd, Chirala</p>
 <p>Phone: 08594239907</p>
 <p>Open Till 10:30 PM</p>
 <p>Service Options: All you can eat · Happy-hour food · Private dining room</p>
+
+<br><br>
+
+<iframe 
+src="https://www.google.com/maps?q=Chirala&output=embed"
+width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+</iframe>
+
 </div>
 
 <footer>
 © 2026 Abhiruchii Family Restaurant | Chirala
 </footer>
+
+<!-- FLOAT BUTTONS -->
+<a href="tel:08594239907" class="call-btn">📞</a>
+<a href="https://wa.me/918594239907" class="whatsapp-btn">💬</a>
 
 </body>
 </html>
