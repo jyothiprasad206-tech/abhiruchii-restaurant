@@ -3,37 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Abhiruchii Restaurant | Restaurants & Bars</title>
+<title>Abhiruchii Family Restaurant | Best Biryani in Chirala</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#fff;color:#333}
+body{font-family:'Poppins',sans-serif;background:#fafafa;color:#333;scroll-behavior:smooth}
 
+/* NAVIGATION */
 nav{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 60px;
+padding:18px 60px;
 background:#111;
 color:white;
 position:sticky;
 top:0;
 z-index:1000;
 }
-
 nav a{
 color:white;
 text-decoration:none;
 margin-left:25px;
 font-weight:500;
 }
+nav a:hover{color:#FF6B00}
 
+/* HERO */
 .hero{
-height:70vh;
+height:80vh;
 background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-url('https://images.unsplash.com/photo-1555992336-03a23c6a03b3');
+url('https://images.unsplash.com/photo-1604908177522-432c26f0d48e');
 background-size:cover;
 background-position:center;
 display:flex;
@@ -44,75 +46,76 @@ color:white;
 text-align:center;
 padding:20px;
 }
-
-.hero h1{
-font-size:3rem;
-margin-bottom:20px;
-}
-
-.hero p{
-max-width:700px;
-line-height:1.6;
-}
-
-.section{
-padding:80px 60px;
-}
-
-.section h2{
-font-size:2rem;
-margin-bottom:40px;
-}
-
-.restaurant-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-.card{
-background:white;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-border-radius:10px;
-overflow:hidden;
+.hero h1{font-size:3rem;margin-bottom:15px}
+.hero p{max-width:700px;margin-bottom:25px}
+.btn{
+background:#8B0000;
+color:white;
+padding:12px 28px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
 transition:0.3s;
 }
+.btn:hover{background:#b30000}
 
-.card img{
+/* SECTION */
+.section{padding:80px 60px}
+.section h2{margin-bottom:30px;font-size:2rem;color:#8B0000}
+
+/* MENU GRID */
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+.menu-card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+.menu-card:hover{transform:translateY(-8px)}
+.menu-card h3{margin-bottom:10px}
+.price{color:#8B0000;font-weight:600}
+
+/* GALLERY */
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+}
+.gallery img{
 width:100%;
 height:220px;
 object-fit:cover;
+border-radius:10px;
 }
 
-.card-content{
+/* REVIEWS */
+.review{
+background:#fff;
 padding:20px;
+border-radius:10px;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
+margin-bottom:15px;
 }
 
-.card:hover{
-transform:translateY(-10px);
-}
-
-.btn{
-display:inline-block;
-margin-top:15px;
-padding:10px 20px;
-background:#8B0000;
-color:white;
-text-decoration:none;
-border-radius:5px;
-font-size:14px;
-}
-
-.offers{
-background:#f8f8f8;
-}
-
-.footer{
+/* CONTACT */
+.contact-box{
 background:#111;
 color:white;
-padding:50px 60px;
+padding:60px;
 text-align:center;
-margin-top:50px;
+}
+
+/* FOOTER */
+footer{
+background:#000;
+color:white;
+padding:20px;
+text-align:center;
 }
 
 @media(max-width:768px){
@@ -126,94 +129,110 @@ nav{flex-direction:column}
 <body>
 
 <nav>
-<div><strong>Abhiruchii Restaurant</strong></div>
+<div><strong>Abhiruchii Family Restaurant</strong></div>
 <div>
-<a href="#restaurants">Restaurants</a>
-<a href="#offers">Special Offers</a>
+<a href="#menu">Menu</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
 <a href="#contact">Contact</a>
 </div>
 </nav>
 
 <div class="hero">
-<h1>Restaurants & Bars</h1>
-<p>
-Enjoy some of the finest and most varied dining options in Chirala.
-From bold Andhra flavours to contemporary cuisine, 
-Abhiruchii Restaurant invites you on a culinary journey.
-</p>
-<p style="margin-top:15px;font-weight:600;">
-Restaurant Reservations: 08594239907
-</p>
+<h1>Authentic Andhra Flavours in Chirala</h1>
+<p>Spicy biryanis, rich curries & family dining experience loved by 7000+ customers.</p>
+<a href="tel:08594239907" class="btn">Call & Reserve Now</a>
 </div>
 
-<div id="restaurants" class="section">
-<h2>Our Dining Experiences</h2>
+<!-- MENU SECTION -->
+<div id="menu" class="section">
+<h2>Popular Menu Items</h2>
 
-<div class="restaurant-grid">
+<div class="menu-grid">
 
-<div class="card">
+<div class="menu-card">
+<h3>Chicken Biryani</h3>
+<p>Single & Full Available</p>
+<p class="price">₹120</p>
+</div>
+
+<div class="menu-card">
+<h3>Mutton Biryani</h3>
+<p>Single & Full Available</p>
+<p class="price">₹170</p>
+</div>
+
+<div class="menu-card">
+<h3>Chicken Fry</h3>
+<p>Single & Full Available</p>
+<p class="price">₹100</p>
+</div>
+
+<div class="menu-card">
+<h3>Butter Naan</h3>
+<p>Soft & Fresh Tandoor</p>
+<p class="price">₹35</p>
+</div>
+
+<div class="menu-card">
+<h3>Egg Fried Rice</h3>
+<p>Single & Full Available</p>
+<p class="price">₹60</p>
+</div>
+
+<div class="menu-card">
+<h3>Prawns Curry</h3>
+<p>Spicy Andhra Style</p>
+<p class="price">₹300</p>
+</div>
+
+</div>
+</div>
+
+<!-- GALLERY -->
+<div id="gallery" class="section">
+<h2>Our Special Dishes</h2>
+<div class="gallery">
 <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0">
-<div class="card-content">
-<h3>Spice Pavilion</h3>
-<p>Authentic Andhra biryani & spicy delights.</p>
-<a href="#" class="btn">Discover</a>
-</div>
-</div>
-
-<div class="card">
 <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1">
-<div class="card-content">
-<h3>Grill House</h3>
-<p>Live grills and premium non-veg specials.</p>
-<a href="#" class="btn">Discover</a>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87">
-<div class="card-content">
-<h3>The Lounge</h3>
-<p>Relax with beverages and light bites.</p>
-<a href="#" class="btn">Discover</a>
-</div>
-</div>
-
-</div>
-</div>
-
-<div id="offers" class="section offers">
-<h2>Special Offers</h2>
-
-<div class="restaurant-grid">
-
-<div class="card">
 <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
-<div class="card-content">
-<h3>Sunday Grand Feast</h3>
-<p>Enjoy unlimited meals with family every Sunday.</p>
-<a href="#" class="btn">Read More</a>
+<img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87">
 </div>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1543353071-873f17a7a088">
-<div class="card-content">
-<h3>Festival Specials</h3>
-<p>Celebrate every festival with exclusive dishes.</p>
-<a href="#" class="btn">Read More</a>
+<!-- REVIEWS -->
+<div id="reviews" class="section">
+<h2>Customer Reviews</h2>
+
+<div class="review">
+<p>"Good for non veg lovers, spicy and tasty food available in prime location."</p>
+<strong>- Shalem Raju</strong>
 </div>
+
+<div class="review">
+<p>"Awesome restaurant, must visit place, if you are veggies dont miss veg Biryani."</p>
+<strong>- Pratap N</strong>
+</div>
+
+<div class="review">
+<p>"Had Biryani rice with chilli chicken and gongura chutney and it tastes good."</p>
+<strong>- Karuna Babu G</strong>
 </div>
 
 </div>
-</div>
 
-<div id="contact" class="footer">
-<p><strong>Abhiruchii Restaurant</strong></p>
+<!-- CONTACT -->
+<div id="contact" class="contact-box">
+<h2>Visit Us Today</h2>
 <p>Second Floor, JKC Complex, Andhra Ratna Rd, Chirala</p>
 <p>Phone: 08594239907</p>
 <p>Open Till 10:30 PM</p>
-<p style="margin-top:15px;">© 2026 Abhiruchii Restaurant</p>
+<p>Service Options: All you can eat · Happy-hour food · Private dining room</p>
 </div>
+
+<footer>
+© 2026 Abhiruchii Family Restaurant | Chirala
+</footer>
 
 </body>
 </html>
