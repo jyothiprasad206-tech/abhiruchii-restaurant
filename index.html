@@ -64,18 +64,6 @@ transition:0.3s;
 .section h2{margin-bottom:30px;font-size:2rem;color:#8B0000;text-align:center}
 
 /* MENU */
-<!-- FULL COMPLETE MENU -->
-<div id="menu" class="section">
-<h2>Our Complete Menu</h2>
-
-<script>
-function toggleMenu(id){
-var x=document.getElementById(id);
-x.style.display=(x.style.display==="none")?"block":"none";
-}
-</script>
-
-<style>
 .menu-category button{
 width:100%;
 background:#8B0000;
@@ -88,146 +76,15 @@ cursor:pointer;
 margin-top:15px;
 border-radius:5px;
 }
-.menu-items{display:none;padding:15px 0;}
-.menu-items div{margin-bottom:8px;}
-</style>
-
-<!-- Roti Items -->
-<div class="menu-category">
-<button onclick="toggleMenu('roti')">Roti Items</button>
-<div id="roti" class="menu-items">
-<div>Tandoori Roti - ₹20</div>
-<div>Butter Roti - ₹25</div>
-<div>Plain Naan - ₹30</div>
-<div>Butter Naan - ₹35</div>
-<div>Pulka - ₹15</div>
-<div>Plain Kulcha - ₹25</div>
-<div>Butter Kulcha - ₹30</div>
-</div>
-</div>
-
-<!-- Drinks -->
-<div class="menu-category">
-<button onclick="toggleMenu('drinks')">Drinks</button>
-<div id="drinks" class="menu-items">
-<div>Butter Milk - ₹20</div>
-<div>Cool Drink - ₹25</div>
-<div>1 Ltr Water Bottle - ₹30</div>
-<div>Curd - ₹15</div>
-</div>
-</div>
-
-<!-- Ice Cream -->
-<div class="menu-category">
-<button onclick="toggleMenu('ice')">Ice Creams</button>
-<div id="ice" class="menu-items">
-<div>Vanilla - ₹50</div>
-<div>Strawberry - ₹50</div>
-<div>Chocolate - ₹50</div>
-<div>Butterscotch - ₹60</div>
-<div>Honey Nuts - ₹60</div>
-</div>
-</div>
-
-<!-- Biryani -->
-<div class="menu-category">
-<button onclick="toggleMenu('biryani')">Biryani Items</button>
-<div id="biryani" class="menu-items">
-<div>Chicken Biryani - ₹120</div>
-<div>Spl. Chicken Biryani - ₹130</div>
-<div>Mutton Biryani - ₹170</div>
-<div>Egg Biryani - ₹80</div>
-<div>Prawn Biryani - ₹70</div>
-<div>Chicken Biryani (Family) - ₹400</div>
-<div>Mutton Biryani (Family) - ₹460</div>
-<div>Mutton Dum Biryani - ₹410</div>
-<div>Chicken Dum Biryani - ₹300</div>
-<div>S.p. Biryani - ₹300</div>
-<div>Chicken Fry Biryani - ₹250</div>
-<div>Joint Biryani - ₹300</div>
-<div>Lolly Pup Biryani - ₹370</div>
-<div>Wings Biryani - ₹320</div>
-<div>Moghlai Biryani - ₹310</div>
-<div>Basha Biryani - ₹330</div>
-<div>Prawns Biryani - ₹370</div>
-<div>Bones Sp. Biryani - ₹300</div>
-<div>Tango Biryani - ₹320</div>
-<div>Cashew Biryani - ₹290</div>
-<div>Mushroom Biryani - ₹290</div>
-<div>Paneer Biryani - ₹290</div>
-<div>Veg Biryani - ₹290</div>
-<div>Biryani Rice - ₹170</div>
-<div>Curd Rice - ₹140</div>
-<div>Family Pack - ₹790</div>
-</div>
-</div>
-
-<!-- Non Veg Curries -->
-<div class="menu-category">
-<button onclick="toggleMenu('curries')">Non Veg Curries</button>
-<div id="curries" class="menu-items">
-<div>Chicken Fry - ₹100</div>
-<div>Chicken Curry - ₹100</div>
-<div>Gongura Chicken Curry - ₹100</div>
-<div>Chicken Boneless - ₹100</div>
-<div>Chicken Liver Fry - ₹80</div>
-<div>Mutton Fry - ₹150</div>
-<div>Mutton Curry - ₹150</div>
-<div>Mutton Gongura - ₹150</div>
-<div>Butter Chicken - ₹260</div>
-<div>Egg Curry - ₹160</div>
-</div>
-</div>
-
-<!-- Fish -->
-<div class="menu-category">
-<button onclick="toggleMenu('fish')">Fish Items</button>
-<div id="fish" class="menu-items">
-<div>Pepper Fish - ₹280</div>
-<div>Apollo Fish - ₹280</div>
-<div>Fish 65 - ₹280</div>
-<div>Fish Chilli - ₹280</div>
-<div>Fish Manchuria - ₹280</div>
-<div>Fish Curry - ₹280</div>
-<div>Fish Fry (Chandava) - ₹350</div>
-</div>
-</div>
-
-<!-- Prawns -->
-<div class="menu-category">
-<button onclick="toggleMenu('prawns')">Prawns Items</button>
-<div id="prawns" class="menu-items">
-<div>Pepper Prawns - ₹300</div>
-<div>Loose Prawns - ₹300</div>
-<div>Prawns Chilli - ₹300</div>
-<div>Prawns 65 - ₹300</div>
-<div>Prawns Curry - ₹300</div>
-<div>Kadai Prawns Curry - ₹300</div>
-<div>Butter Prawns Curry - ₹300</div>
-<div>Prawns Rayalaseema - ₹300</div>
-</div>
-</div>
-
-<!-- Chinese -->
-<div class="menu-category">
-<button onclick="toggleMenu('chinese')">Chinese & Fry Items</button>
-<div id="chinese" class="menu-items">
-<div>Chilly Chicken - ₹250</div>
-<div>Ginger Chicken - ₹280</div>
-<div>Chicken 65 - ₹250</div>
-<div>Chicken 555 - ₹380</div>
-<div>Chicken Hong Kong - ₹400</div>
-<div>Chicken Drums - ₹330</div>
-<div>Chicken Fried Wings - ₹320</div>
-<div>Pepper Chicken - ₹280</div>
-<div>Egg Fried Rice - ₹60</div>
-<div>Chicken Fried Rice - ₹70</div>
-<div>Mutton Fried Rice - ₹370</div>
-<div>Prawns Fried Rice - ₹370</div>
-</div>
-</div>
-
-</div>
+.menu-items{
+display:none;
+background:white;
+padding:15px;
+border-radius:5px;
+margin-top:5px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+.menu-items div{margin-bottom:6px}
 
 /* GALLERY */
 .gallery{
@@ -287,6 +144,14 @@ nav{flex-direction:column}
 .hero h1{font-size:2rem}
 }
 </style>
+
+<script>
+function toggleMenu(id){
+var x=document.getElementById(id);
+x.style.display=(x.style.display==="block")?"none":"block";
+}
+</script>
+
 </head>
 
 <body>
@@ -309,44 +174,93 @@ nav{flex-direction:column}
 
 <!-- MENU -->
 <div id="menu" class="section">
-<h2>Our Menu</h2>
+<h2>Our Complete Menu</h2>
 
 <div class="menu-category">
-<h3>Biryani Items</h3>
-<div class="menu-grid">
-<div class="menu-card"><h4>Chicken Biryani</h4><p class="price">₹120</p></div>
-<div class="menu-card"><h4>Mutton Biryani</h4><p class="price">₹170</p></div>
-<div class="menu-card"><h4>Egg Biryani</h4><p class="price">₹80</p></div>
-<div class="menu-card"><h4>Chicken Dum Biryani</h4><p class="price">₹300</p></div>
-<div class="menu-card"><h4>Family Pack</h4><p class="price">₹790</p></div>
+<button onclick="toggleMenu('biryani')">Biryani Items</button>
+<div id="biryani" class="menu-items">
+Chicken Biryani - ₹120<br>
+Spl. Chicken Biryani - ₹130<br>
+Mutton Biryani - ₹170<br>
+Egg Biryani - ₹80<br>
+Prawn Biryani - ₹70<br>
+Chicken Biryani (Family) - ₹400<br>
+Mutton Biryani (Family) - ₹460<br>
+Mutton Dum Biryani - ₹410<br>
+Chicken Dum Biryani - ₹300<br>
+S.p. Biryani - ₹300<br>
+Chicken Fry Biryani - ₹250<br>
+Joint Biryani - ₹300<br>
+Lolly Pup Biryani - ₹370<br>
+Wings Biryani - ₹320<br>
+Moghlai Biryani - ₹310<br>
+Basha Biryani - ₹330<br>
+Prawns Biryani - ₹370<br>
+Egg Biryani - ₹180<br>
+Bones Sp. Biryani - ₹300<br>
+Tango Biryani - ₹320<br>
+Family Pack - ₹790<br>
+Cashew Biryani - ₹290<br>
+Mushroom Biryani - ₹290<br>
+Paneer Biryani - ₹290<br>
+Veg Biryani - ₹290<br>
+Biryani Rice - ₹170<br>
+Curd Rice - ₹140
 </div>
 </div>
 
 <div class="menu-category">
-<h3>Non Veg Curries</h3>
-<div class="menu-grid">
-<div class="menu-card"><h4>Chicken Curry</h4><p class="price">₹100</p></div>
-<div class="menu-card"><h4>Mutton Curry</h4><p class="price">₹150</p></div>
-<div class="menu-card"><h4>Prawns Curry</h4><p class="price">₹300</p></div>
-<div class="menu-card"><h4>Fish Curry</h4><p class="price">₹280</p></div>
+<button onclick="toggleMenu('roti')">Roti Items</button>
+<div id="roti" class="menu-items">
+Tandoori Roti - ₹20<br>
+Butter Roti - ₹25<br>
+Plain Naan - ₹30<br>
+Butter Naan - ₹35<br>
+Pulka - ₹15<br>
+Plain Kulcha - ₹25<br>
+Butter Kulcha - ₹30
 </div>
 </div>
 
 <div class="menu-category">
-<h3>Roti & Tandoor</h3>
-<div class="menu-grid">
-<div class="menu-card"><h4>Butter Naan</h4><p class="price">₹35</p></div>
-<div class="menu-card"><h4>Tandoori Roti</h4><p class="price">₹20</p></div>
-<div class="menu-card"><h4>Plain Kulcha</h4><p class="price">₹25</p></div>
+<button onclick="toggleMenu('curries')">Non Veg Curries</button>
+<div id="curries" class="menu-items">
+Chicken Fry - ₹100<br>
+Chicken Curry - ₹100<br>
+Gongura Chicken Curry - ₹100<br>
+Chicken Boneless - ₹100<br>
+Chicken Liver Fry - ₹80<br>
+Mutton Fry - ₹150<br>
+Mutton Curry - ₹150<br>
+Mutton Gongura - ₹150
 </div>
 </div>
 
 <div class="menu-category">
-<h3>Drinks & Ice Creams</h3>
-<div class="menu-grid">
-<div class="menu-card"><h4>Butter Milk</h4><p class="price">₹20</p></div>
-<div class="menu-card"><h4>Cool Drink</h4><p class="price">₹25</p></div>
-<div class="menu-card"><h4>Vanilla Ice Cream</h4><p class="price">₹50</p></div>
+<button onclick="toggleMenu('fish')">Fish & Prawns</button>
+<div id="fish" class="menu-items">
+Pepper Fish - ₹280<br>
+Apollo Fish - ₹280<br>
+Fish 65 - ₹280<br>
+Fish Curry - ₹280<br>
+Pepper Prawns - ₹300<br>
+Prawns 65 - ₹300<br>
+Prawns Curry - ₹300
+</div>
+</div>
+
+<div class="menu-category">
+<button onclick="toggleMenu('drinks')">Drinks & Ice Creams</button>
+<div id="drinks" class="menu-items">
+Butter Milk - ₹20<br>
+Cool Drink - ₹25<br>
+1 Ltr Water Bottle - ₹30<br>
+Curd - ₹15<br>
+Vanilla - ₹50<br>
+Strawberry - ₹50<br>
+Chocolate - ₹50<br>
+Butterscotch - ₹60<br>
+Honey Nuts - ₹60
 </div>
 </div>
 
