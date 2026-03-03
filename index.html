@@ -1,63 +1,196 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Abhiruchii Restaurant</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhiruchii Restaurant | Best Biryani in Chirala</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-body {margin:0;font-family:Arial;background:#FFF8E7;}
-header {background:#8B0000;color:white;text-align:center;padding:40px;}
-h1 {margin:0;}
-section {padding:40px;text-align:center;}
-.menu {display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
-.card {background:white;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1);width:250px;}
-button {background:#FF6B00;color:white;border:none;padding:10px 20px;border-radius:5px;cursor:pointer;}
-footer {background:#1A1A1A;color:white;padding:20px;text-align:center;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#FFF8E7;color:#333;scroll-behavior:smooth}
+
+nav{
+position:fixed;
+width:100%;
+background:rgba(0,0,0,0.7);
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+z-index:1000
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:500;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(139,0,0,0.7),rgba(139,0,0,0.7)),
+url('https://images.unsplash.com/photo-1604908177522-432c26f0d48e');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{font-size:3.5rem;margin-bottom:20px}
+.hero p{font-size:1.2rem;margin-bottom:30px}
+
+.btn{
+background:#FF6B00;
+color:white;
+padding:14px 35px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+text-decoration:none;
+font-weight:600;
+transition:0.3s
+}
+
+.btn:hover{background:#e65c00;transform:scale(1.05)}
+
+.section{padding:100px 20px;text-align:center}
+
+.section h2{
+font-size:2.5rem;
+margin-bottom:20px;
+color:#8B0000
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:40px
+}
+
+.card{
+background:white;
+width:300px;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 15px 30px rgba(0,0,0,0.1);
+transition:0.3s
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover
+}
+
+.card-content{
+padding:20px
+}
+
+.card:hover{
+transform:translateY(-15px)
+}
+
+.cta{
+background:#8B0000;
+color:white;
+padding:80px 20px;
+text-align:center
+}
+
+.cta h2{font-size:2.5rem;margin-bottom:20px}
+
+.footer{
+background:#1A1A1A;
+color:white;
+padding:40px;
+text-align:center
+}
+
+@media(max-width:768px){
+.hero h1{font-size:2.2rem}
+.section h2{font-size:1.8rem}
+.cards{flex-direction:column;align-items:center}
+}
 </style>
 </head>
 
 <body>
 
-<header>
-<h1>Abhiruchii Restaurant</h1>
-<p>Authentic Andhra Flavours in Chirala</p>
-<button onclick="window.location.href='tel:08594239907'">Call Now</button>
-</header>
+<nav>
+<div><strong>Abhiruchii</strong></div>
+<div>
+<a href="#menu">Menu</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
 
-<section>
-<h2>Our Special Dishes</h2>
-<div class="menu">
+<div class="hero">
+<h1>Authentic Andhra Flavours</h1>
+<p>Spicy. Fresh. Unforgettable.</p>
+<a href="tel:08594239907" class="btn">Call & Reserve Now</a>
+</div>
+
+<div id="menu" class="section">
+<h2>Signature Dishes</h2>
+<div class="cards">
+
 <div class="card">
+<img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0" alt="Chicken Biryani">
+<div class="card-content">
 <h3>Chicken Biryani</h3>
-<p>Spicy and flavorful Andhra style</p>
+<p>Bold Andhra spices with rich aroma.</p>
+</div>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1625943553852-781c6dd46faa" alt="Mutton Biryani">
+<div class="card-content">
 <h3>Mutton Biryani</h3>
-<p>Rich taste with authentic spices</p>
+<p>Slow-cooked perfection with authentic flavor.</p>
+</div>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1604908812640-6aab8f94cfe1" alt="Chilli Chicken">
+<div class="card-content">
 <h3>Chilli Chicken</h3>
-<p>Perfect starter with bold flavor</p>
+<p>The spicy starter everyone loves.</p>
 </div>
 </div>
-</section>
 
-<section>
+</div>
+</div>
+
+<div id="about" class="section">
 <h2>Why Choose Us?</h2>
-<p>✔ 7000+ Happy Customers</p>
+<p>✔ 7,000+ Happy Customers</p>
 <p>✔ Budget Friendly (₹200–400)</p>
 <p>✔ Prime Location in Chirala</p>
-</section>
+<p>✔ Fast Service</p>
+</div>
 
-<section>
-<h2>Visit Us</h2>
+<div class="cta">
+<h2>Ready to Experience Real Andhra Spice?</h2>
+<a href="tel:08594239907" class="btn">Book Your Table</a>
+</div>
+
+<div id="contact" class="footer">
 <p>Second Floor, JKC Complex, Andhra Ratna Rd, Chirala</p>
-</section>
-
-<footer>
+<p>Open Till 10:30 PM</p>
 <p>© 2026 Abhiruchii Restaurant</p>
-</footer>
+</div>
 
 </body>
 </html>
